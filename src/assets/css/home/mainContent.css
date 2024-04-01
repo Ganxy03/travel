@@ -1,0 +1,206 @@
+.mainContent {
+    position: absolute;
+    top: 100vh;
+    min-height: calc(100vh - 70px);
+    width: 100%;
+    /* background-color: blueviolet; */
+    background: url(@/assets/img/home/bac/banner.png) 50% no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+.mainContent .container {
+    width: 80%;
+    min-height: calc(100vh - 70px);
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+.mainContent .innerNav {
+    height: 140px;
+    /* background-color: aquamarine; */
+    position: relative;
+    display: none;
+}
+.mainContent .innerNav .navItem {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainContent .innerNav .navItem img {
+    height: 90px;
+    width: 90px;
+    margin-bottom: 16px;
+}
+.mainContent .innerNav .navItem span {
+    position: absolute;
+    bottom: 14px;
+    color: #fff;
+    font-size: 16px;
+}
+.mainContent .leftBox {
+    height: calc(100vh - 70px);
+    background-color: rgba(9,53,152,0.6);
+    overflow-y: auto;
+}
+.mainContent .box_in {
+    height: 260px;
+    /* background-color: rgb(236, 148, 33); */
+    padding: 0;
+    margin: 0 24px;
+}
+.mainContent .boxItem {
+    list-style: none;
+    margin: 3px 0;
+}
+.mainContent .boxItem .title {
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.mainContent .boxItem .title .btn {
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.mainContent .sideBar {
+    height: 550px;
+    padding: 0 0 0 12px;
+    /* background-color: blanchedalmond; */
+}
+.mainContent .statistic {
+    min-height: 40px;
+    width: 100%;
+    background-color: #fff;
+}
+.mainContent .statistic .label {
+    color: #8491A5;
+    font-size: 14px;
+}
+.mainContent .statistic .num {
+    margin: 6px 0;
+    color: #191B1F;
+    font-size: 28px;
+}
+.mainContent .statistic .item:nth-child(1) {
+    border-right: 1px solid #ebeced;
+}
+.mainContent .sideNav {
+    margin: 12px 0;
+}
+.mainContent .sideNav .title {
+    text-align: left;
+}
+.mainContent .sideNav .nav {
+    padding: 0;
+}
+.mainContent .sideNav .nav .navItem {
+    margin: 6px 16px;
+    list-style: none;
+    text-align: left;
+    cursor: pointer;
+}
+.mainContent .sideNav .nav .navItem:hover {
+    color: #083598;
+}
+
+.mainContent .currentActivies {
+    width: 100%;
+    padding: 6px 0;
+    min-height: 160px;
+    background-color: #fff;
+    display: none;
+}
+.mainContent .currentActivies .title {
+    color: #2769DA;
+    text-align: left;
+    margin: 0 16px;
+    font-size: 18px;
+}
+.mainContent .bottomNav {
+    background-color: #093488;
+    height: 210px;
+    padding: 12px;
+    display: none;
+}
+.mainContent .bottomNav .one {
+    width: 100%;
+    height: 104px;
+    background: url(@/assets/img/home/nav/in_box5_bj.png) no-repeat top right #D1E7FF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.mainContent .bottomNav .one .text {
+
+}
+.mainContent .bottomNav .one .text h3 {
+    color: #429CFF;
+    font-size: 20px;
+    text-align: left;
+}
+.mainContent .bottomNav .one .text p {
+    color: #666;
+    font-size: 14px;
+}
+.mainContent .bottomNav .one .btn {
+    color: #fff;
+    width: 90px;
+    height: 32px;
+    padding: 0 6px;
+    line-height: 32px;
+    background-color: #5EABFF;
+}
+.mainContent .bottomNav .two {
+    width: calc(50% - 3px);
+    height: 64px;
+    border-radius: 5px;
+    margin-top: 16px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+.mainContent .bottomNav .two .bac img {
+    height: 34px;
+}
+.mainContent .bottomNav .two:nth-child(1) {
+    background-color: #EFFFFD;
+    color: #3EC8B8;
+    margin-right: 3px;
+}
+.mainContent .bottomNav .two:nth-child(2) {
+    background-color: #FFEAE6;
+    color: #E17B4F;
+    margin-left: 3px;
+}
+@media screen and (max-width: 1200px) {
+    .mainContent {
+        top: 65vh;
+    }
+    .mainContent .innerNav {
+        display: block;
+    }
+    .mainContent .sideBar {
+        display: none;
+    }
+    .mainContent .container {
+        width: 90%;
+    }
+    .mainContent .leftBox {
+        width: 100%;
+        background: url(@/assets/img/home/bac/box1_bj.png) 50% no-repeat;
+        background-size: cover;
+    }
+    .mainContent .currentActivies, .mainContent .bottomNav {
+        display: block;
+    }
+    
+}
+

@@ -1,0 +1,17 @@
+.commonFoot {
+    background: url(@/assets/img/foot/bg_footer.jpg) 50% no-repeat;
+    background-size: cover;
+    color: #787878;
+    padding: 12px 0;
+}
+.commonFoot .line {
+    margin: 6px 0;
+}
+.commonFoot .anno {
+    font-size: 13px;
+    cursor: pointer;
+    margin: 3px 6px;
+}
+.commonFoot .anno:hover {
+    color: #fff;
+}

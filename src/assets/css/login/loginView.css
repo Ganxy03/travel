@@ -1,0 +1,46 @@
+.loginContainer {
+    height: 100vh;
+    background: url(@/assets/img/home/bac/banner.jpg) 50% no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginContainer .nav {
+    position: fixed;
+    top: 0;
+}
+.loginContainer .loginForm {
+    height: 45vh;
+    width: 40%;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    position: relative;
+}
+.loginContainer .loginForm .box {
+    width: 60%;
+    margin: 0 auto;
+}
+.loginContainer .loginForm .p-float-label {
+    /* width: 200px; */
+    margin: 0 auto;
+    margin-top: 36px;
+}
+.loginContainer .loginForm .p-inputtext {
+    width: 100%;
+}
+.loginContainer .loginForm .btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+@media screen and (max-width: 960px) {
+    .loginContainer .loginForm {
+        width: 90%;
+    }
+    .loginContainer .loginForm .box {
+        width: 80%;
+    } 
+}
+
